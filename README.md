@@ -3,8 +3,17 @@
 
 - Enzyme JS Docs: https://enzymejs.github.io/enzyme/
 
-``npm install --save-dev enzyme jest-enzyme enzyme-adapter-react-16``
+- ``npm install --save-dev enzyme jest-enzyme enzyme-adapter-react-16``
 
+**Removing data-test attributes from Production:**
+
+- ``npm install --save-dev babel-plugin-react-remove-properties``
+- ``npm run eject`` - used to configure package.json
+- ``npm run build``
+- ``sudo npm install -g serve``
+- ``serve -s build``
+
+**Basic Set Up Example:**
 - App.test.js
 
       import Enzyme, { shallow } from 'enzyme';
